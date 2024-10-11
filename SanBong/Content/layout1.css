@@ -1,0 +1,239 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #18458B;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+
+            nav ul li a:hover {
+                background-color: #ffaa00;
+                border-radius: 5px;
+            }
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.customer-support {
+    background-color: #ffaa00;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .customer-support:hover {
+        background-color: #ff8800;
+    }
+
+.login, .register {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+    .search-bar input {
+        border: none;
+        outline: none;
+        padding: 5px;
+    }
+
+    .search-bar button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.hero-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.hero-image {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.features-section {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* hoặc màu nền bạn muốn */
+}
+
+    .features-section .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .features-section .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .features-section .col {
+        text-align: center;
+        padding: 20px;
+    }
+
+        .features-section .col img {
+            max-width: 100px; /* Cân chỉnh kích thước hình ảnh theo ý muốn */
+            margin-bottom: 20px;
+        }
+
+    .features-section .home-sub-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333; /* Màu của tiêu đề */
+        margin-bottom: 15px;
+    }
+
+    .features-section .home-sub-des {
+        font-size: 16px;
+        color: #777; /* Màu của đoạn mô tả */
+        line-height: 1.5;
+    }
+.sub-footer {
+    background-color: #18458b; /* Nền màu xanh */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+    .sub-footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .sub-footer .row {
+        display: flex;
+        justify-content: space-between; /* Đảm bảo các cột được chia đều */
+        flex-wrap: wrap;
+    }
+
+    .sub-footer .col-sm-4 {
+        flex: 1; /* Đảm bảo mỗi cột chiếm đều không gian */
+        max-width: 33.33%;
+        padding: 0 15px;
+    }
+
+    .sub-footer .footer-widget {
+        margin-bottom: 20px;
+    }
+
+        .sub-footer .footer-widget h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #FFFFFF; /* Màu chữ tiêu đề */
+        }
+
+    .sub-footer .footer-contacts-widget p,
+    .sub-footer .footer-contacts-widget ul {
+        color: #FFFFFF;
+        line-height: 1.6;
+        font-size: 14px;
+    }
+
+    .sub-footer .footer-contacts-widget ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+        .sub-footer .footer-contacts-widget ul li {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+            .sub-footer .footer-contacts-widget ul li a {
+                color: #F9B90F; /* Màu vàng cho các đường link */
+                text-decoration: none;
+            }
+
+                .sub-footer .footer-contacts-widget ul li a:hover {
+                    text-decoration: underline;
+                }
+
+            .sub-footer .footer-contacts-widget ul li span {
+                margin-right: 5px;
+            }
+
+/* Chăm sóc khách hàng */
+.customer-support-widget h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #F9B90F;
+    margin-bottom: 10px;
+}
+
+.customer-support-widget {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media screen and (max-width: 768px) {
+    .sub-footer .col-sm-4 {
+        max-width: 100%; /* Khi màn hình nhỏ, mỗi cột chiếm 100% chiều rộng */
+        margin-bottom: 20px;
+    }
+}
